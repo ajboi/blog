@@ -5,8 +5,8 @@ const SocialTray = ({list}) => {
         <div className='social-tray'>
             {list.map( ({name, icon, anchor}) => 
                 (
-                    <a href={anchor} target='blank'>
-                    <FontAwesomeIcon className='social-icon' key={name} icon={icon} />
+                    <a href={anchor} key={name} target='blank'>
+                    <FontAwesomeIcon className='social-icon' icon={icon} />
                     </a>
                 ))}
         </div>

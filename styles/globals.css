@@ -94,6 +94,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  color: #000;
+  background: #D8B681;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1;
@@ -304,7 +309,7 @@ a {
   color: #81D7D8;
 }
 
-small {
+.footer small {
   margin-top: 0.5rem;
   font-family: 'Montserrat';
   font-size: 12px;
@@ -314,4 +319,39 @@ small {
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 0.25rem;
+}
+
+.footer .footer-small-link {
+  color: #81D7D8;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.pagination-container .pagination-text {
+  margin: 0 0.5rem 0 0.5rem;
+  color: #D8B681;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
 }

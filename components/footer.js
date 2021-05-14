@@ -31,7 +31,7 @@ const Footer = () => {
                 <p className='social-text'>Follow me on:</p>
                 <SocialTray list={mapper} />
                 <small>
-            Copyright 2021 Rants & Reasons. Site Powered by NextJs and Prismic.
+            Copyright 2021 <a className='footer-small-link' href='https://github.com/ajboi/blog' target='blank'>Rants & Reasons</a>. Site Powered by <a className='footer-small-link' target='blank' href='https://www.nextjs.org'>NextJs</a> and <a className='footer-small-link' target='blank' href='https://www.prismic.io'>Prismic</a>.
             </small>
             </div>
         </footer>
