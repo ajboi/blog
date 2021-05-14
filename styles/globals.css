@@ -1,85 +1,93 @@
 /* montserrat-500italic - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
-  src: local(''),
-       url('../public/fonts/montserrat-v15-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/montserrat-v15-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/montserrat-v15-latin-500italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/montserrat-v15-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-600 - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: local(''),
-       url('../public/fonts/montserrat-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/montserrat-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/montserrat-v15-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/montserrat-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../public/fonts/montserrat-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/montserrat-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/montserrat-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/montserrat-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* playfair-display-700 - latin */
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../public/fonts/playfair-display-v22-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/playfair-display-v22-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/playfair-display-v22-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/playfair-display-v22-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../public/fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/open-sans-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/open-sans-v18-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/open-sans-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-italic - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
-  src: local(''),
-       url('../public/fonts/open-sans-v18-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/open-sans-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/open-sans-v18-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/open-sans-v18-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-700 - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../public/fonts/open-sans-v18-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/open-sans-v18-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/open-sans-v18-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/open-sans-v18-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-700italic - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 700;
-  src: local(''),
-       url('../public/fonts/open-sans-v18-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/open-sans-v18-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../public/fonts/open-sans-v18-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../public/fonts/open-sans-v18-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 * {
   box-sizing: border-box;
-  background-color: #FAF5ED;
-  font-family: 'Open Sans';
+  background-color: #faf5ed;
+  font-family: "Open Sans";
   font-size: 16px;
 }
 
@@ -96,7 +104,7 @@ a {
 
 ::selection {
   color: #000;
-  background: #D8B681;
+  background: #d8b681;
 }
 
 .layout {
@@ -104,7 +112,7 @@ a {
   grid-template-columns: 1;
 }
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
   padding-right: 0.5rem;
@@ -117,8 +125,8 @@ a {
   margin-left: 3rem;
 }
 
-.logo h1{
-  font-family: 'Montserrat';
+.logo h1 {
+  font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -133,16 +141,16 @@ a {
 }
 
 .nav-item a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
-  line-height: 19.5px; 
-   padding: 10px 0.75rem;
-   text-decoration: none;
+  line-height: 19.5px;
+  padding: 10px 0.75rem;
+  text-decoration: none;
 }
 
 .nav-item:hover a {
-  color: #81D7D8;
+  color: #81d7d8;
 }
 
 .heading-wrapper {
@@ -152,8 +160,8 @@ a {
   justify-content: center;
 }
 
-.heading-wrapper h2 span{
-  font-family: 'Montserrat';
+.heading-wrapper h2 span {
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 40px;
   text-decoration: none;
@@ -170,7 +178,7 @@ a {
   width: 760px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0.5rem
+  margin-bottom: 0.5rem;
 }
 
 .postcard {
@@ -181,7 +189,8 @@ a {
   max-height: 240px;
 }
 
-.postcard .card-img, .post .card-contents {
+.postcard .card-img,
+.post .card-contents {
   flex: 0 1 auto;
 }
 
@@ -199,7 +208,7 @@ a {
 
 .postcard .card-contents .card-title {
   margin-top: 0.5rem;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -209,11 +218,11 @@ a {
 }
 
 .postcard .card-contents .card-title-link:hover {
-  color: #81D7D8;
+  color: #81d7d8;
 }
 
 .postcard .card-contents .post-excerpt {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -225,20 +234,19 @@ a {
 
 .postcard .card-contents .card-read-more {
   margin-top: 0.5rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
-  color: #81D7D8;
+  color: #81d7d8;
   text-decoration: underline;
-
 }
 
 .postcard .card-contents .card-date {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -246,13 +254,13 @@ a {
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 0.625rem;
-  color: #7D7A76;
+  color: #7d7a76;
 }
 
 .button {
   width: 5rem;
   height: 2.5rem;
-  background-color: #81D7D8;
+  background-color: #81d7d8;
   border-radius: 0.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -261,19 +269,19 @@ a {
 }
 
 .button .button-text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
-  background-color: #81D7D8;
+  background-color: #81d7d8;
 }
 
 .footer {
   margin-top: 0.5rem;
-  padding-top: 0.5rem;  
+  padding-top: 0.5rem;
 }
 
 .footer .social-container {
@@ -287,7 +295,7 @@ a {
 .footer .social-container .social-text {
   justify-content: center;
   margin-bottom: 0.25rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -296,7 +304,7 @@ a {
   text-align: left;
 }
 
-.footer .social-container .social-tray{
+.footer .social-container .social-tray {
   justify-content: center;
   margin-top: 0.25rem;
   padding: 0 0rem 0.5rem 0rem;
@@ -306,12 +314,12 @@ a {
   padding: 0 0.5rem 0rem 0.5rem;
   width: 60px;
   height: 60px;
-  color: #81D7D8;
+  color: #81d7d8;
 }
 
 .footer small {
   margin-top: 0.5rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -322,10 +330,10 @@ a {
 }
 
 .footer .footer-small-link {
-  color: #81D7D8;
+  color: #81d7d8;
   text-decoration: underline;
   margin-top: 0.5rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -345,8 +353,8 @@ a {
 
 .pagination-container .pagination-text {
   margin: 0 0.5rem 0 0.5rem;
-  color: #D8B681;
-  font-family: 'Montserrat';
+  color: #d8b681;
+  font-family: "Montserrat";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
