@@ -36,7 +36,11 @@ const Footer = () => {
         <p className="social-text">Follow me on:</p>
         <SocialTray list={mapper} />
         <small>
-          Copyright 2021{" "}
+          &#169;
+          {`${(() => {
+            let a = new Date();
+            return a.getFullYear();
+          })()}. `}
           <a
             className="footer-small-link"
             href="https://github.com/ajboi/blog"

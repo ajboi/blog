@@ -17,7 +17,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  var test = await getTests();
+  let test = await getTests();
   return {
     props: { test },
     revalidate: 1,
