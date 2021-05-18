@@ -49,21 +49,6 @@ async function fetchAPI(query, { variables } = {}) {
   return json.data;
 }
 
-const queryTests = () => {
-  const query = `{
-        allTests {
-          edges {
-            node {
-              test
-              _linkType
-            }
-          }
-        }
-      }
-      `;
-  return query;
-};
-
 const queryAbout = () => {
   const query = `{
       allAbouts {
@@ -80,15 +65,100 @@ const queryAbout = () => {
   return query;
 };
 
-export async function getTests() {
-  const query = queryTests();
-  const data = await fetchAPI(query);
-  return data.allTests.edges[0].node.test;
-}
-
 export async function getAbout() {
   const query = queryAbout();
   const data = await fetchAPI(query);
   return data.allAbouts.edges[0].node;
 }
 
+const queryBlogsForCards = ({ lastPostCursor, limitation }) => {
+  const query = `
+  {
+    allBlogs(sortBy: date_DESC, after:"${lastPostCursor}",first:${limitation}){
+      totalCount
+      pageInfo{
+        hasNextPage
+        hasPreviousPage
+        startCursor
+        endCursor
+      }
+      edges{
+        node {
+          _meta{
+            uid
+          }
+          title
+          date
+          featured_image
+          excerpt
+          _linkType
+        }
+      }
+    }
+  }`;
+  return query;
+};
+
+export async function getBlogsForCards(lastPostCursor, limitation) {
+  const query = queryBlogsForCards({ lastPostCursor, limitation });
+  const data = await fetchAPI(query);
+  return data.allBlogs;
+}
+
+const queryBlogwithSlug = ({ slug }) => {
+  const query = `
+  {
+    allBlogs (uid:"${slug}") {
+     edges {
+       node {
+         title
+         date
+         featured_image
+         excerpt
+         _meta{
+           uid
+         }
+         body {
+           __typename
+           ... on BlogBodyQuote{
+             primary {
+               quote
+             }
+             label
+             type
+           }
+           ... on BlogBodyImage{
+             primary {
+               image
+             }
+             label
+             type
+           }
+           ... on BlogBodyParagraph{
+             primary {
+               paragraph
+             }
+             label
+             type
+           }
+           ... on BlogBodyEmbed{
+             primary {
+               embed
+             }
+             label
+             type
+           }
+         }
+       }
+     }
+   }
+  }
+  `;
+  return query;
+};
+
+export async function getBlogWithSlug(slug) {
+  const query = queryBlogwithSlug({ slug });
+  const data = await fetchAPI(query);
+  return data.allBlogs;
+}

@@ -114,6 +114,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #faf5ed;
 }
 
 a {
@@ -252,7 +253,7 @@ a {
 }
 
 .postcard .card-contents .card-read-more {
-  margin-top: 0.5rem;
+  margin-top: auto;
   font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
@@ -272,7 +273,7 @@ a {
   line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 0.625rem;
+  margin-top: auto;
   color: #7d7a76;
 }
 
@@ -292,7 +293,7 @@ a {
 
 .button .button-text {
   font-family: "Montserrat";
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: 12px;
@@ -377,7 +378,7 @@ a {
   margin: 0 0.5rem 0 0.5rem;
   color: #d8b681;
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 22px;

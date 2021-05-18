@@ -4,22 +4,22 @@ import Layout from "../components/layout";
 import Heading from "../components/heading";
 import PostsContainer from "../components/postscontainer";
 import Button from "../components/button";
-import { getTests } from "../prismic-config";
+import { getBlogsForCards } from "../prismic-config";
 
-export default function Home(props) {
+export default function Home({ posts }) {
   return (
     <Layout>
       <Heading heading="Recent Updates" />
-      <PostsContainer />
-      <Button link="/" text={props.test} />
+      <PostsContainer params={posts} />
+      <Button link="/archive" text="Archive" />
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  let test = await getTests();
+  let posts = await getBlogsForCards(" ", 8);
   return {
-    props: { test },
+    props: { posts },
     revalidate: 1,
   };
 }

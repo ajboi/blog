@@ -1,10 +1,20 @@
 import Postcard from "./postcard";
+import { RichText } from "prismic-reactjs";
 
-const PostsContainer = () => {
+const PostsContainer = ({ params }) => {
+  let postArray = params.edges;
   return (
     <div className="posts-container">
-      {[1, 2, 3, 4, 5, 6].map((i) => (
-        <Postcard key={i} />
+      {postArray.map((i) => (
+        <Postcard
+          key={postArray.indexOf(i)}
+          imageURL={i.node.featured_image.card.url}
+          imageAlt={i.node.featured_image.alt}
+          title={RichText.asText(i.node.title)}
+          excerpt={i.node.excerpt}
+          slugurl={i.node._meta.uid}
+          date={i.node.date}
+        />
       ))}
     </div>
   );
