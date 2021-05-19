@@ -8,14 +8,14 @@ export default function Archive({posts}) {
     <Layout>
       <Heading heading="Archive" />
       <PostsContainer params={posts} />
-      <div className="pagination-container">
+      {/* <div className="pagination-container">
         <a href="/" className="pagination-text">
           Previous
         </a>
         <a href="/" className="pagination-text">
           Next
         </a>
-      </div>
+      </div> */}
     </Layout>
   );
 }

@@ -10,6 +10,7 @@ const Postcard = ({ imageURL, imageAlt, title, excerpt, slugurl, date }) => {
             src={imageURL}
             width="300px"
             height="200px"
+            alt={imageAlt}
           />
         </a>
       </Link>

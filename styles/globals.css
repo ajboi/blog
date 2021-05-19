@@ -167,9 +167,16 @@ a {
   font-size: 16px;
   padding: 10px 0.75rem;
   text-decoration: none;
+  transition: 0.3s;
 }
 
-.nav-item:hover a {
+@media (hover: hover) and (pointer: fine) {
+  .nav-item:hover a {
+    color: #81d7d8;
+  }
+}
+
+.nav-item .active {
   color: #81d7d8;
 }
 
@@ -206,7 +213,7 @@ a {
   flex-direction: row;
   padding: 1.25rem;
   max-width: 720px;
-  max-height: 240px;
+  height: 240px;
 }
 
 .postcard .card-img,
@@ -237,9 +244,14 @@ a {
   text-align: left;
 }
 
-.postcard .card-contents .card-title-link:hover {
-  color: #81d7d8;
+@media (hover: hover) and (pointer: fine) {
+  .postcard .card-contents .card-title-link:hover .card-title {
+    color: #81d7d8;
+    transition: 0.2s;
+  }
 }
+
+
 
 .postcard .card-contents .post-excerpt {
   font-family: "Open Sans";
@@ -608,6 +620,12 @@ a {
     padding-left: 0.25rem;
   }
 
+  @media (hover: none) {
+    .nav-item:focus a {
+      color: #81d7d8;
+    }
+  }
+
   .heading-wrapper {
     height: 3rem;
   }
@@ -652,6 +670,14 @@ a {
     line-height: 24px;
   }
 
+  
+  @media (hover: none) {
+    .postcard .card-contents .card-title-link:focus .card-title {
+      color: #81d7d8;
+      transition: 0.2s;
+    }
+  }
+  
   .postcard .card-contents .post-excerpt {
     display: none;
   }
@@ -883,6 +909,13 @@ a {
     line-height: 24px;
   }
 
+  @media (hover: none) {
+    .postcard .card-contents .card-title-link:focus .card-title {
+      color: #81d7d8;
+      transition: 0.2s;
+    }
+  }
+
   .postcard .card-contents .post-excerpt {
     display: none;
   }
@@ -1040,7 +1073,6 @@ a {
 }
 
 @media only screen and (min-width: 721px) and (max-width: 820px) {
-  
   .blog-container {
     width: 100%;
     padding: 0 2rem;

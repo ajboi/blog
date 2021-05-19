@@ -4,14 +4,8 @@ import { RichText } from "prismic-reactjs";
 import { getBlogWithSlug } from "../../prismic-config";
 import Layout from "../../components/layout";
 import Button from "../../components/button";
-import {
-  faTwitterSquare,
-  faLinkedin,
-  faWhatsappSquare,
-} from "@fortawesome/free-brands-svg-icons";
 
 export default function Blog({ post }) {
-
   let htmlcontent;
   if (post.body == null) {
     htmlcontent = RichText.render(post.content);
@@ -43,14 +37,13 @@ export default function Blog({ post }) {
           <img
             className="blog-featured-image"
             src={post.featured_image.url}
-            width='1200px'
-            height='800px'
+            alt={post.featured_image.alt}
+            width="1200px"
+            height="800px"
           />
         </div>
 
-        <div className="blog-content-container">
-          {htmlcontent}
-        </div>
+        <div className="blog-content-container">{htmlcontent}</div>
       </div>
 
       <Button link="/" text={`Go Back`} />
