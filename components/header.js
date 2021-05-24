@@ -6,11 +6,11 @@ const Layout = () => {
 
   return (
     <nav className="navbar">
-      <Link href="/" passHref>
+      {/* <Link href="/" passHref>
         <a className="logo">
           <h1>Reasons & Rants</h1>
         </a>
-      </Link>
+      </Link> */}
       <ul className="nav-links">
         <li className={`nav-item `}>
           <Link href="/" passHref>

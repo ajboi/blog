@@ -14,6 +14,17 @@ import { RichText } from "prismic-reactjs";
 export default function About({ photoAlt, photoUrl, content }) {
   return (
     <Layout>
+      <Head>
+        <title>About | Ajai's Blog</title>
+        <meta
+          name="Description"
+          content="Hi, I am Ajai Kannan, and this is my personal blog."
+        />
+        <meta
+          name="Keywords"
+          content="ajai kannan, ajai, ajai k, ajai kannan k, ajai blog"
+        />
+      </Head>
       <div className="blog-container">
         <div className="blog-featured-image-container">
           <img className="profile-picture" src={photoUrl} />

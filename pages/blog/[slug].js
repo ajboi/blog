@@ -6,31 +6,59 @@ import Layout from "../../components/layout";
 import Button from "../../components/button";
 
 export default function Blog({ post }) {
-  let htmlcontent;
-  if (post.body == null) {
-    htmlcontent = RichText.render(post.content);
-  } else {
-    htmlcontent = post.body.map((slice) => {
-      if (slice.type === "quote") {
-        return (
-          <blockquote> {RichText.render(slice.primary.quote)} </blockquote>
-        );
-      }
-      if (slice.type === "paragraph") {
-        return RichText.render(slice.primary.paragraph);
-      }
-      if (slice.type === "image") {
-        return (
-          <img src={slice.primary.image.url} alt={slice.primary.image.alt} />
-        );
-      }
-    });
-  }
+  let htmlcontent = post.body;
+
+  let mdRender = htmlcontent.map((slice) => {
+    if (slice == null) {
+      return;
+      RichText.render(slice);
+    }
+    if (slice.type === "quote") {
+      return <blockquote>{RichText.render(slice.primary.quote)}</blockquote>;
+    }
+    if (slice.type === "paragraph") {
+      return RichText.render(slice.primary.paragraph);
+    }
+    if (slice.type === "image") {
+      return (
+        <img src={slice.primary.image.url} alt={slice.primary.image.alt} />
+      );
+    }
+  });
+
+  let dateFormat = function (date) {
+    date = date.split("-");
+    date = new Date(date[0], date[1] - 1, date[2]);
+    let months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    return `${date.getDate()} ${
+      months[date.getMonth()]
+    }, ${date.getFullYear()}`;
+  };
+
   return (
     <Layout>
+      <Head>
+        <title>{`${RichText.asText(post.title)} | Ajai's Blog`}</title>
+        <meta name="Description" content={post.excerpt} />
+        <meta name="keywords" content={post.keywords} />
+      </Head>
       <div className="blog-container">
         <div className="blog-title-container">
           <h2 className="blog-title">{RichText.asText(post.title)}</h2>
+          <span className="blog-date">{dateFormat(post.date)}</span>
         </div>
 
         <div className="blog-featured-image-container">
@@ -43,7 +71,11 @@ export default function Blog({ post }) {
           />
         </div>
 
-        <div className="blog-content-container">{htmlcontent}</div>
+        <div className="blog-content-container">
+          {mdRender.map((x, index) => {
+            return <div key={index}>{x}</div>;
+          })}
+        </div>
       </div>
 
       <Button link="/" text={`Go Back`} />

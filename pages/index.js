@@ -9,7 +9,19 @@ import { getBlogsForCards } from "../prismic-config";
 export default function Home({ posts }) {
   return (
     <Layout>
-      <Heading heading="Recent Updates" />
+      <Head>
+        <title>Ajai's Blog</title>
+        <link rel="icon" href="favico.ico" />
+        <meta
+          name="Description"
+          content="Hi, I am Ajai Kannan, and this is my personal blog."
+        />
+        <meta
+          name="Keywords"
+          content="ajai kannan, ajai, ajai k, ajai kannan k, ajai blog"
+        />
+      </Head>
+      <Heading heading="Recent Posts" />
       <PostsContainer params={posts} />
       <Button link="/archive" text="Archive" />
     </Layout>

@@ -115,6 +115,7 @@ const queryBlogwithSlug = ({ slug }) => {
          date
          featured_image
          excerpt
+         keywords
          _meta{
            uid
          }

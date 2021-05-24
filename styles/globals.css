@@ -251,8 +251,6 @@ a {
   }
 }
 
-
-
 .postcard .card-contents .post-excerpt {
   font-family: "Open Sans";
   font-size: 14px;
@@ -285,7 +283,7 @@ a {
   line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
-  margin-top: auto;
+  margin-top: 0.5rem;
   color: #7d7a76;
 }
 
@@ -340,6 +338,7 @@ a {
 }
 
 .footer .social-container .social-tray {
+  min-width: 240px;
   justify-content: center;
   margin-top: 0.25rem;
   padding: 0 0rem 0.5rem 0rem;
@@ -347,6 +346,7 @@ a {
 
 .footer .social-container .social-tray .social-icon {
   padding: 0 0.5rem 0rem 0.5rem;
+  display: inline;
   width: 60px;
   height: 60px;
   color: #81d7d8;
@@ -407,10 +407,11 @@ a {
 }
 
 .blog-container .blog-title-container {
-  height: 5.5rem;
+  min-height: 5.5rem;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .blog-container .blog-title-container .blog-title {
@@ -421,6 +422,17 @@ a {
   line-height: 49px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.blog-container .blog-title-container .blog-date {
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 1rem 0 0 0;
 }
 
 .blog-container .blog-featured-image-container {
@@ -670,14 +682,13 @@ a {
     line-height: 24px;
   }
 
-  
   @media (hover: none) {
     .postcard .card-contents .card-title-link:focus .card-title {
       color: #81d7d8;
       transition: 0.2s;
     }
   }
-  
+
   .postcard .card-contents .post-excerpt {
     display: none;
   }
@@ -744,7 +755,7 @@ a {
   }
 
   .blog-container .blog-title-container {
-    height: 3rem;
+    min-height: 3rem;
     margin-bottom: 0rem;
     display: flex;
     align-items: center;
