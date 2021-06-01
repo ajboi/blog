@@ -7,9 +7,8 @@ class MyDocument extends Document {
   }
 
   render() {
-    let local = process.env.PRISMIC_LOCALE;
     return (
-      <Html lang={local}>
+      <Html lang="en">
         <Head />
         <body>
           <Main />
