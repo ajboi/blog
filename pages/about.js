@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/layout";
+import Heading from "../components/heading";
 import { getAbout } from "../prismic-config";
 import Button from "../components/button";
 import {
@@ -25,9 +26,16 @@ export default function About({ photoAlt, photoUrl, content }) {
           content="ajai kannan, ajai, ajai k, ajai kannan k, ajai blog"
         />
       </Head>
+      <Heading heading="About" />
       <div className="blog-container">
         <div className="blog-featured-image-container">
-          <img className="profile-picture" src={photoUrl} />
+          <img
+            className="profile-picture"
+            src={photoUrl}
+            alt={photoAlt}
+            width="1200px"
+            height="800px"
+          />
         </div>
         <div className="blog-content-container">{RichText.render(content)}</div>
       </div>
