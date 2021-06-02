@@ -21,7 +21,7 @@ const Footer = () => {
     {
       name: "Instagram",
       icon: faInstagram,
-      anchor: "https://www.instagram.com",
+      anchor: "https://www.instagram.com/ajai._.kannan/",
     },
     {
       name: "LinkedIn",
