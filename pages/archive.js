@@ -9,6 +9,7 @@ export default function Archive({ posts }) {
     <Layout>
       <Head>
         <title>Archive | Ajai's Blog</title>
+        <link rel="icon" href="favico.ico" />
         <meta
           name="Description"
           content="Hi, I am Ajai Kannan, and this is my personal blog."

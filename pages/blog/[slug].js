@@ -52,6 +52,7 @@ export default function Blog({ post }) {
     <Layout>
       <Head>
         <title>{`${RichText.asText(post.title)} | Ajai's Blog`}</title>
+        <link rel="icon" href="favico.ico" />
         <meta name="Description" content={post.excerpt} />
         <meta name="keywords" content={post.keywords} />
       </Head>
