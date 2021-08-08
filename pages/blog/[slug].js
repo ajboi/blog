@@ -87,7 +87,8 @@ export default function Blog({ post }) {
 export async function getServerSideProps({ params }) {
   let slug = params.slug;
   let value = await getBlogWithSlug(slug);
-  let post = value.edges[0].node;
+  let post_val = value.edges[0];
+  let post = post_val.node;
   return {
     props: { post },
   };

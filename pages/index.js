@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <Layout>
       <Head>
-        <title>Ajai's Blog</title>
+        <title>Ajai Kannan | Ajai's Blog</title>
         <link rel="icon" href="favico.ico" />
         <meta
           name="Description"
