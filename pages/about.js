@@ -16,7 +16,7 @@ export default function About({ photoAlt, photoUrl, content }) {
   return (
     <Layout>
       <Head>
-        <title>About | Ajai's Blog</title>
+        <title>Ajai Kannan</title>
         <link rel="icon" href="favico.ico" />
         <meta
           name="Description"
