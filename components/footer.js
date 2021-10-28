@@ -46,7 +46,7 @@ const Footer = () => {
             href="https://github.com/ajboi/blog"
             target="blank"
           >
-            Rants & Reasons
+            Ajai Kannan
           </a>
           . Site Powered by{" "}
           <a
